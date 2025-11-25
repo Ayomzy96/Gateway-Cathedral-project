@@ -1,0 +1,49 @@
+@import "../../styles/functions";
+@import "../../styles/variables";
+@import "../../styles/base/mixins";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 38px;
+  flex-shrink: 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  background-color: $col-green-1;
+  color: $col-white;
+  width: fit-content;
+  transition: all 0.3s;
+  @include border-radius(8px);
+  &:disabled {
+    opacity: 0.75;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+  &[data-size="mini"] {
+    height: 40px;
+    font-size: 14px;
+    padding: 11px 24px;
+  }
+  &[data-size="small"] {
+    height: 38px;
+    font-size: 13px;
+    padding: 9px 38px;
+  }
+  &[data-size="medium"] {
+    height: 46px;
+    font-size: 14px;
+    padding: 18px 43px;
+  }
+  &[data-variant="secondary"] {
+    border: 1px solid $col-green-1;
+    color: $col-green-1;
+    background-color: initial;
+    &:hover {
+      background-color: $col-green-1;
+      color: $col-white;
+    }
+  }
+}

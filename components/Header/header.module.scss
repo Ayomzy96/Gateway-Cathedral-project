@@ -1,0 +1,220 @@
+@import "../../styles/variables";
+@import "../../styles/base/mixins";
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-left: 93px;
+  height: 95px;
+  flex-shrink: 0;
+  gap: 173px;
+  background-color: $col-white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.03);
+  &[data-page="home"] {
+    background-color: transparent;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    @include z-index(overlay);
+  }
+  &[data-sticky="true"] {
+    transition: all 0.4s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $col-white;
+    z-index: 20;
+    & p {
+      color: inherit;
+    }
+    & a {
+      color: inherit;
+      @include respond(mobile-screen) {
+        color: $col-white;
+      }
+    }
+  }
+  @include respond(mobile-screen) {
+    padding: 0px 31px;
+  }
+  &__logo {
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &-name {
+      font-family: $Lobster;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: capitalize;
+      // color: #4a4a4a;
+      color: $col-white;
+      &[data-sticky="true"],
+      &[data-page="true"] {
+        color: #4a4a4a;
+      }
+
+      & span {
+        color: #219653;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &__link {
+    &[data-page="default"] {
+      & a {
+        color: #4a4a4a;
+        @include respond(mobile-screen) {
+          color: $col-white;
+        }
+      }
+    }
+    &-wrapper {
+      display: flex;
+      gap: 47px;
+      @include respond(mobile-screen) {
+        display: none;
+      }
+    }
+    &-dropdown {
+      background-color: $col-white;
+      display: flex;
+      flex-direction: column;
+      gap: 19px;
+      padding: 31px 40px;
+      @include border-radius(16px);
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
+      &-list {
+        & a {
+          color: $col-dark-1;
+          & div {
+            display: none;
+          }
+        }
+        &-item {
+          color: $col-dark-1;
+          font-size: 13px;
+          font-weight: 400;
+        }
+        &-name {
+          color: $col-dark-1;
+          font-size: 13px;
+          font-weight: 400;
+        }
+      }
+      &-list {
+        white-space: nowrap;
+      }
+      &-wrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+      }
+      &-container {
+        display: none;
+        height: fit-content;
+        width: fit-content;
+        position: absolute;
+        top: 31px;
+        transform: translateX(-30%);
+        @include z-index(overlay);
+        &[data-toggle="true"] {
+          display: block;
+        }
+      }
+      &-name {
+        font-family: "Segoe UI", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: #4a4a4a;
+        &[data-page="home"] {
+          color: $col-white;
+        }
+      }
+    }
+    &-button {
+      font-family: "Segoe UI", sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      color: white;
+      display: flex;
+    }
+  }
+  &__mobile-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    flex-shrink: 0;
+    &:hover {
+      background: rgba(243, 243, 243, 0.08);
+    }
+    & a {
+      color: $col-white;
+      & p {
+        font-size: 16px;
+      }
+      & div {
+        display: none;
+      }
+    }
+    &-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &-button {
+      display: none;
+      @include respond(mobile-screen) {
+        display: flex;
+        position: absolute;
+        right: 10px;
+      }
+      &[data-page="default"],
+      &[data-sticky="true"] {
+        & span {
+          & svg {
+            & path {
+              stroke: rgba(0, 0, 0, 0.8);
+            }
+          }
+        }
+      }
+    }
+    &-overlay {
+      &-wrapper {
+        display: none;
+        @include respond(mobile-screen) {
+          position: fixed;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          background: rgba(58, 58, 58, 0.77);
+          backdrop-filter: blur(7.5px);
+          z-index: 200;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          // gap: 24px;
+          padding-top: 33px;
+        }
+      }
+      &-cancel-button {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,166 @@
+// Montserrat
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Extra Light"), local("Montserrat-ExtraLight"),
+    url("../../public/assests/fonts/Montserrat-ExtraLight.ttf")
+      format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Extra Light Italic"),
+    local("Montserrat-ExtraLightItalic"),
+    url("../../public/assests/fonts/Montserrat-ExtraLightItalic.ttf")
+      format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Light"), local("Montserrat-Light"),
+    url("../../public/assests/fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Light Italic"), local("Montserrat-LightItalic"),
+    url("../../public/assests/fonts/Montserrat-LightItalic.ttf")
+      format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../../public/assests/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Italic"), local("Montserrat-Italic"),
+    url("../../public/assests/fonts/Montserrat-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Semi Bold"), local("Montserrat-SemiBold"),
+    url("../../public/assests/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Semi Bold Italic"), local("Montserrat-SemiBoldItalic"),
+    url("../../public/assests/fonts/Montserrat-SemiBoldItalic.ttf")
+      format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Bold Italic"), local("Montserrat-Bold"),
+    url("../../public/assests/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Bold Italic"), local("Montserrat-BoldItalic"),
+    url("../../public/assests/fonts/Montserrat-BoldItalic.ttf")
+      format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Extra Bold"), local("Montserrat-ExtraBold"),
+    url("../../public/assests/fonts/Montserrat-ExtraBold.ttf")
+      format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Extra Bold Italic"),
+    local("Montserrat-ExtraBoldItalic"),
+    url("../../public/assests/fonts/Montserrat-ExtraBoldItalic.ttf")
+      format("truetype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Black"), local("Montserrat-Black"),
+    url("../../public/assests/fonts/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Black Italic"), local("Montserrat-BlackItalic"),
+    url("../../public/assests/fonts/Montserrat-BlackItalic.ttf")
+      format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+// Lobster
+
+@font-face {
+  font-family: "Lobster";
+  src: local("Lobster-Regular"), local("Lobster-Regular"),
+    url("../../public/assests/fonts/Lobster-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lobster";
+  src: local("Lobster-Italic"), local("Lobster-Italic"),
+    url("../../public/assests/fonts/Lobster-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lobster";
+  src: local("Lobster-Bold"), local("Lobster-Bold"),
+    url("../../public/assests/fonts/Lobster-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}

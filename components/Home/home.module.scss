@@ -1,0 +1,124 @@
+@import "../../styles/variables";
+@import "../../styles/base/mixins";
+@import "../../styles/functions";
+@import "../../styles/typography";
+
+.home {
+  background-image: url("/images/background_image-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  transition: background-image 3s ease-in-out;
+  @include respond(mobile-screen) {
+    overflow: hidden;
+    background-position: 50%;
+    height: 95vh;
+    position: relative;
+    // padding-top: 85px;
+  }
+
+  &__content {
+    &-wrapper {
+      // margin-top: calc(16vh);
+      margin-left: calc(4vw);
+      display: flex;
+      align-items: flex-end;
+      height: 100%;
+      padding-bottom: calc(3vh);
+      @include respond(mobile-screen) {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: initial;
+        margin-left: initial;
+        align-items: flex-start;
+        justify-content: center;
+      }
+    }
+    &-background {
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8) 0.06%,
+        rgba(0, 0, 0, 0.4) 57.1%,
+        rgba(0, 0, 0, 0.3) 99.94%
+      );
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      @include respond(mobile-screen) {
+        padding-top: 85px;
+        top: 0;
+        bottom: 0;
+      }
+    }
+    &-cross-icon {
+      opacity: 0.25;
+      & span {
+        & svg {
+          fill: rgba(255, 255, 255, 0.11);
+        }
+      }
+      @include respond(mobile-screen) {
+        position: absolute;
+        z-index: 0;
+        left: -25%;
+        top: 20%;
+      }
+    }
+    &-container {
+      width: 670px;
+      @include respond(mobile-screen) {
+        padding: 0px 6%;
+        width: 100%;
+        z-index: 1;
+        padding-left: calc(6%);
+      }
+    }
+    &-worship-icon {
+      & span {
+        & svg {
+          @include respond(mobile-screen) {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &-heading {
+      color: $col-white;
+      font-size: 52px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 64px;
+      letter-spacing: -1px;
+      @include respond(mobile-screen) {
+        font-size: toRem(26px);
+        line-height: 44px;
+      }
+    }
+    &-text {
+      color: $col-white-2;
+      text-align: justify;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      margin-top: 14px;
+      @include respond(mobile-screen) {
+        line-height: 20px;
+        font-size: 13px;
+        margin-top: 30px;
+      }
+    }
+    &-mouse-animation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 42px;
+    }
+  }
+}

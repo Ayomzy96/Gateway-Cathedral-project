@@ -1,0 +1,77 @@
+@import "../../styles/variables";
+@import "../../styles/functions.scss";
+@import "../../styles/base/mixins";
+@import "../../styles/typography";
+
+.services {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  height: 90vh;
+  padding: 0px 95px;
+  @include respond(mobile-screen) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 64px 0px;
+    height: auto;
+  }
+  &__heading {
+    @include heading;
+    writing-mode: tb;
+    transform: rotate(180deg);
+    @include respond(mobile-screen) {
+      @include heading-mobile;
+      writing-mode: initial;
+      transform: initial;
+      padding-left: calc(6%);
+    }
+  }
+  &__content {
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 83.4%;
+      @include respond(mobile-screen) {
+        width: 100%;
+        & button {
+          align-self: center;
+        }
+      }
+    }
+    &-heading {
+      @include h2;
+      @include respond(mobile-screen) {
+        display: none;
+      }
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        @include respond(mobile-screen) {
+          padding-left: calc(6%);
+        }
+      }
+    }
+    &-description {
+      @include description;
+      //   width: 98%;
+      @include respond(mobile-screen) {
+        width: 92%;
+      }
+    }
+  }
+
+  &__view-button {
+    display: none;
+    @include respond(mobile-screen) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__loading-card-wrapper {
+    display: flex;
+    gap: 18px;
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../styles/variables";
+@import "../../styles/functions.scss";
+@import "../../styles/base/mixins";
+@import "../../styles/typography";
+
+.carousel {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    width: 100%;
+    & ul {
+      display: flex;
+      gap: 25px;
+      @include respond(mobile-screen) {
+        gap: 14px;
+      }
+    }
+  }
+  &__buttons {
+    & span {
+      & svg {
+        width: 44px;
+        height: 44px;
+      }
+    }
+    @include respond(mobile-screen) {
+      display: none;
+    }
+  }
+}
