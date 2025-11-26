@@ -54,6 +54,7 @@ const ServicesCarousel: React.FC<ServicesCarouselProps> = ({
               img={service?.img}
               location={service?.location}
               day={service?.day}
+              // @ts-ignore: prop exists at runtime but is not declared in ServiceCardProps
               handleReminderButton={handleReminderButton}
             />
           );

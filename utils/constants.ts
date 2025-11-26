@@ -201,7 +201,7 @@ export const faq = [
   {
     title: "How can I contact the church staff or pastor for pastoral care?",
     content:
-      "You can reach us at (704) 493-5062, email us at shininglightfellowship01@gmail.com, or stay behind after services to speak with the church staff or pastor. ",
+      "You can reach us at +234 9073889672, email us at shininglightfellowship01@gmail.com, or stay behind after services to speak with the church staff or pastor. ",
   },
   {
     title:
@@ -215,9 +215,9 @@ export const footerInfo = [
   {
     icon: "phone",
     title: "Phone Number",
-    description: "(704) 493-5062",
+    description: "(+234) 9073889672",
     onClick: () => {
-      const phoneNumber = "+1 704 493 5064";
+      const phoneNumber = "+234 907 388 9672";
       window.location.href = `tel:${phoneNumber}`;
     },
   },
