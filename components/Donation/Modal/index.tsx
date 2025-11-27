@@ -44,7 +44,7 @@ const Modal: React.FC<ModalProps> = () => {
 
   const tabList: Record<string, JSX.Element> = {
     // "Bank Transfer": <BankTransfer />,
-    "Cash App": (
+    "GT Bank": (
       <div className={styles["modal__content-container"]}>
         <div className={styles["modal__content-details-wrapper"]}>
           <p className={styles["modal__content-details-heading"]}>
@@ -53,7 +53,7 @@ const Modal: React.FC<ModalProps> = () => {
         </div>
       </div>
     ),
-    "Venmo": (
+    "Opay": (
       <div className={styles["modal__content-container"]}>
         <div className={styles["modal__content-details-wrapper"]}>
           <p className={styles["modal__content-details-heading"]}>

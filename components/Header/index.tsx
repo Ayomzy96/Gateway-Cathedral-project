@@ -114,7 +114,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
             </li>
           );
         })}
-        <Link href="#donation" className={styles["header__link-button"]}>
+        <Link href="/about-us#donation" className={styles["header__link-button"]}>
           Giving
         </Link>
       </ul>

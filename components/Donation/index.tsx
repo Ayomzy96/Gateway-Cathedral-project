@@ -24,7 +24,7 @@ const Donation: React.FC = () => {
         <div className={styles["donation__content-icon"]}>
           <Image
             src={
-              "https://Gatewaydevbucket.s3.us-west-1.amazonaws.com/Images/donation.png"
+              "https://kdijhjnkxkrfjlyavcoe.supabase.co/storage/v1/object/public/Gateway%20Cathedral/giving.jpg"
             }
             fill
             alt="Giving icon"
