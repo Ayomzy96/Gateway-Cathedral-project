@@ -66,7 +66,7 @@ const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
           Read inspiring testimonies from some of our brethren whose lives have
           been changed by the Lord since becoming part of our church. Their
           stories remind us of the wonders possible when we truly connect to the
-          incredible power of God, which is abundant in Gateway Cathedral.
+          incredible power of God, which is abundant in Shining Light Fellowship.
         </p>
         <div className={styles["testimonies__description-button"]}>
           <Button

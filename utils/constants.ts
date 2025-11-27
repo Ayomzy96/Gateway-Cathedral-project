@@ -158,7 +158,7 @@ export const testimonies = [
   {
     name: "Anonymous",
     testimony:
-      "Since I became a part of the Gateway Cathedral family, my life has turned around for the better. I feel loved, cherished, and truly blessed. God bless Pastor Adamson for his counsel and support and for welcoming me into the fold.",
+      "Since I became a part of the Shining Light Fellowship family, my life has turned around for the better. I feel loved, cherished, and truly blessed. God bless Pastor Adamson for his counsel and support and for welcoming me into the fold.",
   },
   {
     name: "Anonymous",
@@ -207,7 +207,7 @@ export const faq = [
     title:
       "Do you offer online services or livestreams for those unable to attend in person?",
     content:
-      "Yes, we do, although it’s primarily through our YouTube channel, RCCG Gateway Cathedral. We’re working on providing livestreams through Mixlr.",
+      "Yes, we do, although it’s primarily through our YouTube channel, RCCG Shining Light Fellowship. We’re working on providing livestreams through Mixlr.",
   },
 ];
 
@@ -224,10 +224,10 @@ export const footerInfo = [
   {
     icon: "location",
     title: "Address",
-    description: "Gateway cathedral,Otunba Runsewe Estate, Ahmadiyya, Ijaiye-Ojokoro, Lagos state, Lagos, Nigeria",
+    description: "Shining Light Fellowship,Otunba Runsewe Estate, Ahmadiyya, Ijaiye-Ojokoro, Lagos state, Lagos, Nigeria",
     onClick: () => {
       const address =
-        " Gateway cathedral, Otunba Runsewe Estate, ahmadiyya, Ijaiye-Ojokoro, Lagos state, Lagos, Nigeria";
+        " Shining Light Fellowship, Otunba Runsewe Estate, ahmadiyya, Ijaiye-Ojokoro, Lagos state, Lagos, Nigeria";
       const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
         address
       )}`;

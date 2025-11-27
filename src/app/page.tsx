@@ -31,7 +31,7 @@ const Page: React.FC = () => {
         <div className={styles["children__banner-image"]}>
           <div className={styles["children__banner-content"]}>
             <h1 className={styles["children__banner-content-heading"]}>
-              Welcome to the Gateway cathedral youth church 
+              Welcome to the Shining Light Fellowship youth church 
             </h1>
             <p className={styles["children__banner-content-description"]}>
               Remember your Creator in the days of your youth, before the days
@@ -54,7 +54,7 @@ const Page: React.FC = () => {
               <h1
                 className={styles["children__pastor-profile-content-heading"]}
               >
-                Welcome to the Youth Zone!
+                Welcome to Shining Light Fellowship!
               </h1>
               <p className={styles["children__pastor-profile-content"]}>
                 We believe the best way for students to experience God is

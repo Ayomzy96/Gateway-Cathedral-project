@@ -20,7 +20,7 @@ const PastorProfile: React.FC = () => {
           Thanks for dedicating a few moments to explore our website. As you
           navigate through, discover opportunities to connect with God,
           cultivate community, and contribute to the well-being of others at
-          Gateway Cathedral.
+          Shining Light Fellowship.
         </p>
         <br />
         <p className={styles["profile__content"]}>
@@ -34,7 +34,7 @@ const PastorProfile: React.FC = () => {
         </p>
         <br />
         <p className={styles["profile__content"]}>
-          We invite you to join us at Gateway Cathedral, where you&apos;ll
+          We invite you to join us at Shining Light Fellowship, where you&apos;ll
           find a warm and welcoming community. Come and experience the
           transformative power of God&apos;s presence and the support of a
           faith-filled family.
@@ -48,7 +48,7 @@ const PastorProfile: React.FC = () => {
           May the Lord bless you and keep you. May His face shine upon you and
           be gracious to you. May He lift up His countenance upon you and give
           you peace. We look forward to the privilege of welcoming you to
-          Gateway Cathedral.
+          Shining Light Fellowship.
         </p>
       </div>
     </div>

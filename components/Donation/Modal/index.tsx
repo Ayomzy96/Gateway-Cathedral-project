@@ -20,7 +20,7 @@ const BankTransfer: React.FC = () => {
       <div className={styles["modal__content-details-wrapper"]}>
         <p className={styles["modal__content-details-heading"]}>Account Name</p>
         <p className={styles["modal__content-details-description"]}>
-          Gateway Cathedral
+          Shining Light Fellowship
         </p>
       </div>
       <div className={styles["modal__content-details-wrapper"]}>

@@ -42,7 +42,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ showViewButton, showFullText }) => {
       <div className={styles["about-us__description-wrapper"]}>
         <h1 className={styles["about-us__description-heading"]}>About Us</h1>
         <p className={styles["about-us__description"]}>
-          Welcome to Gateway Cathedral, a parish of the Redeemed Christian
+          Welcome to Shining Light Fellowship, a parish of the Redeemed Christian
           Church of God . Here, we believe in worshipping God in
           spirit and truth with the pure Word of God as our guiding light
           towards impacting lives. We take pride in the unique and profound way

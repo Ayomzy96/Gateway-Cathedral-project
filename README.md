@@ -1,1 +1,1 @@
-RCCG Gateway Cathedral church website repository
+RCCG Shining Light Fellowship church website repository

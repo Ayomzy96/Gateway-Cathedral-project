@@ -3,6 +3,12 @@
 @import "../../styles/functions";
 @import "../../styles/typography";
 
+:root {
+  --hero-overlay-top: rgba(0, 0, 0, 0.55);
+  --hero-overlay-bottom: rgba(0, 0, 0, 0.35);
+  --hero-cta-bg: #ffcc00;
+}
+
 .home {
   background-image: url("/images/background_image-2.jpg");
   background-repeat: no-repeat;
@@ -18,6 +24,10 @@
     height: 95vh;
     position: relative;
     // padding-top: 85px;
+  }
+
+  &::before {
+    background: linear-gradient(var(--hero-overlay-top), var(--hero-overlay-bottom));
   }
 
   &__content {
