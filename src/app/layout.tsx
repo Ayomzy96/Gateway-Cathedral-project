@@ -4,7 +4,7 @@ import "../../styles/style.scss";
 
 export const metadata = {
   title:
-    "Gateway Cathedral | Spirit-Filled Worship & Biblical Teachings in North Carolina",
+    "Gateway Cathedral | Spirit-Filled Worship & Biblical Teachings",
   description:
     "Gateway Cathedral, led by Pastor Peter Adamson, is a dynamic Christian church in Concord, North Carolina, dedicated to spreading the Gospel, fostering spiritual growth, and building a strong faith-based community through worship, prayer, and outreach programs.",
   keywords:
