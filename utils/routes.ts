@@ -33,19 +33,7 @@ export const pageRoutes = [
       },
     ],
   },
-  {
-    name: "Ministries",
-    children: [
-      {
-        path: "children",
-        name: "Children",
-      },
-      {
-        path: "youths",
-        name: "Youths",
-      },
-    ],
-  },
+  
 ];
 
 export const mobilePageRoutes = [
@@ -77,10 +65,7 @@ export const mobilePageRoutes = [
     path: "blogs",
     name: "Blogs",
   },
-  {
-    path: "children",
-    name: "Children",
-  },
+  
   {
     path: "youths",
     name: "Youths",
