@@ -39,7 +39,7 @@ const VideoPlayer: React.FC = () => {
         ref={videoRef}
         className={styles["video"]}
         poster={
-          "https://Gatewaydevbucket.s3.us-west-1.amazonaws.com/Images/video-poster-img.jpg"
+          "https://kdijhjnkxkrfjlyavcoe.supabase.co/storage/v1/object/public/Gateway%20Cathedral/IMG_0654.jpg"
         }
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
@@ -62,7 +62,7 @@ const VideoPlayer: React.FC = () => {
           <div className={styles["video__overlay-content-container"]}>
             <h1 className={styles["video__overlay-content-heading"]}>
               <span> Experience Exceptional Worship</span> and Life-Impacting
-              Word at Our Church in Concord
+              Word at Our Shining Light fellowship.
             </h1>
             <button
               className={styles["video__overlay-play-button"]}

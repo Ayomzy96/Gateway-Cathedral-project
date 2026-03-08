@@ -7,19 +7,7 @@ export const pageRoutes = [
     path: "about-us",
     name: "About",
   },
-  {
-    name: "Archive",
-    children: [
-      {
-        path: "musics",
-        name: "Musics",
-      },
-      {
-        path: "books",
-        name: "Books",
-      },
-    ],
-  },
+  // Archive removed
   {
     name: "Events",
     children: [
@@ -45,14 +33,7 @@ export const mobilePageRoutes = [
     path: "about-us",
     name: "About",
   },
-  {
-    path: "musics",
-    name: "Musics",
-  },
-  {
-    path: "books",
-    name: "Books",
-  },
+  // musics removed from mobile nav
   {
     path: "events",
     name: "Events",

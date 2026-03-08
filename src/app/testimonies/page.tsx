@@ -36,14 +36,12 @@ const TestimoniesPage: React.FC = () => {
         </div>
         <div className={styles["testimonies__description-container"]}>
           <p className={styles["testimonies__description"]}>
-            Lorem ipsum dolor sit amet consectetur. Duis vulputate libero turpis
-            gravida. Sit blandit bibendum molestie mattis risus velit eu. Morbi
-            consectetur ut nisi massa quam purus. Morbi mauris elementum in enim
-            quis semper nisl. Cursus semper cras sit elementum turpis congue
-            risus. Sed ut imperdiet vitae augue iaculis duis. Nisl sit rutrum
-            sed turpis dui pretium. Fermentum lectus eu turpis mi mauris aliquam
-            et facilisis. Risus at phasellus sem cum elementum molestie. Eget
-            sit.
+            Testimonies remind us of God's faithfulness and the power of telling
+            what He has done. As Revelation 12:11 says, "They triumphed over him
+            by the blood of the Lamb and by the word of their testimony" — your
+            story can encourage others, strengthen faith, and bring hope to those
+            who are struggling. Please share how God has moved in your life so we
+            can celebrate and uplift one another.
           </p>
           <div className={styles["testimonies__description-button"]}>
             <Button

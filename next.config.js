@@ -2,13 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: [
-      "wayforwarddevbucket.s3.us-west-1.amazonaws.com",
-      "i.ytimg.com",
-      "kdijhjnkxkrfjlyavcoe.supabase.co",
-      "drive.google.com",
-  "gatewaydevbucket.s3.us-west-1.amazonaws.com",
-  "i.swncdn.com",
+    remotePatterns: [
+      { protocol: 'https', hostname: 'wayforwarddevbucket.s3.us-west-1.amazonaws.com' },
+      { protocol: 'https', hostname: 'i.ytimg.com' },
+      { protocol: 'https', hostname: 'kdijhjnkxkrfjlyavcoe.supabase.co' },
+      { protocol: 'https', hostname: 'drive.google.com' },
+      { protocol: 'https', hostname: 'gatewaydevbucket.s3.us-west-1.amazonaws.com' },
+      { protocol: 'https', hostname: 'i.swncdn.com' },
     ],
   },
 };

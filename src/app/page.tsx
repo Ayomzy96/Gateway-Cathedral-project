@@ -5,12 +5,10 @@ import Image from "next/image";
 import LoadingCard from "@/components/LoadingCard";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
-import MusicCard from "@/components/Songs/MusicCard";
-import MusicCarousel from "./MusicCarousel";
+// music components removed
 import Services from "@/components/Service";
 
 import { youthFaq } from "@/utils/constants";
-import { musics } from "@/utils/constants";
 
 import styles from "./page.module.scss";
 
@@ -89,48 +87,7 @@ const Page: React.FC = () => {
             </div>
           </div>
 
-          <div className={styles["children__music-section"]}>
-            <div className={styles["children__music-heading-wrapper"]}>
-              <h1 className={styles["children__music-heading"]}>
-                Youth Praise Playlist
-              </h1>
-              <p className={styles["children__music-description"]}>
-                Lifting our voices in praise together is such a powerful way to
-                hold onto truth even in hard times. It is my hope and prayer
-                that through this music, you experience God&apos;s presence
-                afresh and find a new perspective on whatever life may bring
-                your way.
-              </p>
-            </div>
-            <div className={styles["children__music-content-wrapper"]}>
-              {loading ? (
-                <div className={styles["children__music-loader"]}>
-                  <LoadingItems />
-                </div>
-              ) : (
-                <div className={styles["children__music-carousel-wrapper"]}>
-                  <MusicCarousel>
-                    {musics?.map((music, index) => {
-                      return (
-                        <div
-                          className={styles["children__music"]}
-                          key={index + 1}
-                        >
-                          <MusicCard
-                            src={music?.src}
-                            name={music?.name}
-                            authorName={music?.authorName}
-                            duration={music?.musicLength}
-                            img={music?.img}
-                          />
-                        </div>
-                      );
-                    })}
-                  </MusicCarousel>
-                </div>
-              )}
-            </div>
-          </div>
+          {/* Music section removed */}
         </div>
       </div>
   <Services />
@@ -143,16 +100,4 @@ const Page: React.FC = () => {
 };
 
 export default Page;
-
-const LoadingItems = () => {
-  return (
-    <>
-      {Array.from({ length: 5 })
-        .map((_, i) => i + 1)
-        .map((_, index) => {
-          return <LoadingCard key={index + 1} />;
-        })}
-    </>
-  );
-};
 

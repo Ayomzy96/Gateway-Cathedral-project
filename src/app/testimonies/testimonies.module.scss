@@ -45,9 +45,16 @@
   }
   &__description {
     @include description;
+    /* Improve legibility: increase size, weight and contrast */
     width: 70%;
+    font-size: toRem(16px);
+    font-weight: 700;
+    line-height: 28px;
+    color: $col-dark-3;
     @include respond(mobile-screen) {
       width: 100%;
+      font-size: toRem(14px);
+      line-height: 22px;
     }
     &-container {
       display: flex;

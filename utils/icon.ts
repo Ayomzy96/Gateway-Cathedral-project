@@ -23,6 +23,7 @@ export type IconNames =
   | "instagram"
   | "youtube"
   | "twitter"
+  | "tiktok"
   | "checkmark"
   | "loading"
   | "cancel"

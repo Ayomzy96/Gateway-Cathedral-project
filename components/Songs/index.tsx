@@ -1,11 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
 
 import Carousel from "../Carousel";
 import MusicCard from "./MusicCard";
 import Icon from "../Icon";
-import Button from "../Button";
+// Button removed because /musics page (archive) has been removed
 import LoadingCard from "../LoadingCard";
 
 import { musics } from "@/utils/constants";
@@ -24,11 +23,7 @@ import styles from "./songs.module.scss";
 
 const Songs: React.FC = ({}) => {
   const [loading, setLoading] = useState<boolean>(true);
-  const { push } = useRouter();
-
-  const handleRouteToMusicPage = () => {
-    push("/musics");
-  };
+  // navigation to /musics removed
 
   useEffect(() => {
     const delay = setTimeout(() => {
@@ -80,15 +75,7 @@ const Songs: React.FC = ({}) => {
           <Icon icon="wave" />
         </div>
       </div>
-      <div className={styles["songs__button"]}>
-        <Button
-          label="View More"
-          type="button"
-          variant="primary"
-          size="small"
-          handleClick={handleRouteToMusicPage}
-        />
-      </div>
+      {/* View More removed (archive/musics removed) */}
     </section>
   );
 };

@@ -17,17 +17,24 @@ export const services = [
     name: "Gateway monthly youth connect",
     day: "Every last Sunday of the month from 5pm - 7pm",
     location: "Otunba Runsewe Estate, Ahmadiyya, Ijaiye-Ojokoro, Lagos state, Lagos, Nigeria",
+    calendarLink: "https://www.google.com/calendar/render?action=TEMPLATE&text=Gateway%20Monthly%20Youth%20Connect&dates=20260222T170000/20260222T190000&details=Gateway%20monthly%20youth%20connect.%20Monthly%20service%20(Last%20Sunday%20of%20each%20month).&location=Otunba%20Runsewe%20Estate%2C%20Ahmadiyya%2C%20Ijaiye-Ojokoro%2C%20Lagos%20state%2C%20Lagos%2C%20Nigeria&ctz=Africa%2FLagos&recur=RRULE%3AFREQ%3DMONTHLY%3BBYDAY%3DSU%3BBYSETPOS%3D-1",
   },
   {
     img: "https://kdijhjnkxkrfjlyavcoe.supabase.co/storage/v1/object/public/Gateway%20Cathedral/photos/prayer%20meeting.jpg",
     name: "Prayer meeting",
-    day: "Every Friday by 7pm - 8pm",
+    day: "Every Saturday by 4pm - 6pm",
     location: "Otunba Runsewe Estate, Ahmadiyya, Ijaiye-Ojokoro, Lagos state, Lagos, Nigeria",
   },
   {
     img: "https://kdijhjnkxkrfjlyavcoe.supabase.co/storage/v1/object/public/Gateway%20Cathedral/photos/sunday%20service.jpg",
     name: "Sunday Service",
-    day: "Every 3rd Sunday of the month by 10:15am",
+    day: "Every Sunday of the week 10:00am",
+    location: "Otunba Runsewe Estate, Ahmadiyya, Ijaiye-Ojokoro, Lagos state, Lagos, Nigeria",
+  },
+  {
+    img: "https://kdijhjnkxkrfjlyavcoe.supabase.co/storage/v1/object/public/Gateway%20Cathedral/photos/sunday%20service.jpg",
+    name: "National Youth Thanksgiving",
+    day: "Every 3rd Sunday of the month ",
     location: "Otunba Runsewe Estate, Ahmadiyya, Ijaiye-Ojokoro, Lagos state, Lagos, Nigeria",
   },
 ];
@@ -35,8 +42,8 @@ export const services = [
 export const upComingEvents = [
   {
     img: "https://Gatewaydevbucket.s3.us-west-1.amazonaws.com/Images/bible-service.jpg",
-    name: "Praise Night",
-    day: "Wednesday 22, 2024",
+    name: "Worship Concert",
+    day: "Not determined yet",
     location: "Otunba Runsewe Estate, Ahmadiyya, Ijaiye-Ojokoro, Lagos state, Lagos, Nigeria",
   },
   
@@ -253,11 +260,15 @@ export const footerLink = [
   },
   {
     icon: "instagram",
-    link: "",
+    link: "https://www.instagram.com/rccgslf/",
   },
   {
     icon: "youtube",
-    link: "https://www.youtube.com/channel/UCNx25yX0Lu6sDT8P12Pmnvw",
+    link: "https://www.youtube.com/@rccggatewaycathedrallp25/featured",
+  },
+  {
+    icon: "tiktok",
+    link: "https://www.tiktok.com/@rccgslf",
   },
   {
     icon: "twitter",
@@ -311,15 +322,6 @@ export const vision = [
     content: `Our commitment to those battling depression is unwavering. Through compassionate care, counseling, and a supportive church community, we aim to be a source of comfort and understanding. By fostering an environment where individuals feel safe to share their struggles, we seek to provide solace, hope, and the healing power of God's love to guide them through challenging times.`,
   },
 ];
-
-export const booksList = [
-  {
-    name: "Commander In Chief",
-    img: "https://Gatewaydevbucket.s3.us-west-1.amazonaws.com/Images/commander_in_chief.jpg",
-    link: "https://amzn.to/3DmKmHn",
-  },
-];
-
 export const homeBgImages = [
   // "background_image.jpg",
   "Gateway-family-image.jpg",

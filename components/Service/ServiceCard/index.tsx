@@ -11,11 +11,12 @@ interface ServiceCardProps {
   name: string;
   day: string;
   location: string;
-  eventTitle: string;
-  startDateTime: string; // Format: YYYYMMDDTHHmmss
-  endDateTime: string;   // Format: YYYYMMDDTHHmmss
+  eventTitle?: string;
+  startDateTime?: string; // Format: YYYYMMDDTHHmmss
+  endDateTime?: string;   // Format: YYYYMMDDTHHmmss
   details?: string;
   recurrenceRule?: string; // Optional, e.g. "RRULE:FREQ=MONTHLY;BYDAY=-1SU"
+  calendarLink?: string;
 }
 
 export const ServiceCard: React.FC<ServiceCardProps> = ({
@@ -28,9 +29,26 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
   endDateTime,
   details,
   recurrenceRule,
+  calendarLink,
 }) => {
   const getGoogleCalendarUrl = () => {
-    let url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventTitle)}&dates=${startDateTime}/${endDateTime}`;
+    // Prefer a direct calendarLink (pre-built) when provided from data
+    if (calendarLink) return calendarLink;
+    // If start/end are missing, open the calendar day view for today so the user can add manually
+    if (!startDateTime || !endDateTime) {
+      const date = new Date();
+      const year = date.getFullYear();
+      const month = (date.getMonth() + 1).toString().padStart(2, "0");
+      const day = date.getDate().toString().padStart(2, "0");
+      const formattedDate = `${year}${month}${day}`;
+      return `https://calendar.google.com/calendar/r/day/${formattedDate}`;
+    }
+
+    const title = eventTitle ?? name;
+
+    let url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
+      title
+    )}&dates=${startDateTime}/${endDateTime}`;
     if (details) url += `&details=${encodeURIComponent(details)}`;
     if (location) url += `&location=${encodeURIComponent(location)}`;
     if (recurrenceRule) url += `&recur=${encodeURIComponent(recurrenceRule)}`;
@@ -64,7 +82,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
         </div>
         <Button
           type="button"
-          label="Set Reminder"
+          label="Add to calendar"
           variant="primary"
           size="small"
           handleClick={onSetReminder}

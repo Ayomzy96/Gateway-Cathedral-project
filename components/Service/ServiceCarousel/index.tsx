@@ -54,8 +54,10 @@ const ServicesCarousel: React.FC<ServicesCarouselProps> = ({
               img={service?.img}
               location={service?.location}
               day={service?.day}
-              // @ts-ignore: prop exists at runtime but is not declared in ServiceCardProps
-              handleReminderButton={handleReminderButton}
+                // pass pre-built calendarLink when available
+                // @ts-ignore: prop exists at runtime but is not declared in ServiceCardProps
+                calendarLink={service?.calendarLink}
+                // legacy handler removed — ServiceCard opens calendarLink directly
             />
           );
         })}
