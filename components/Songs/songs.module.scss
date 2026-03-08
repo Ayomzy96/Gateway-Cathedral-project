@@ -51,20 +51,7 @@
       font-size: toRem(24px);
     }
   }
-  &__song {
-    height: 281px;
-    @include border-radius(13px);
-    @include respond(mobile-screen) {
-      width: 100% !important;
-    }
-    &-carousel {
-      &-wrapper {
-        width: 88%;
-        @include respond(mobile-screen) {
-          width: 100%;
-        }
-      }
-    }
+  /* Styles removed for Songs (archive) */
     &-loader-wrapper {
       display: flex;
       gap: 20px;

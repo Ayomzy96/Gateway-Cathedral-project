@@ -63,10 +63,12 @@ const Testimonies: React.FC<TestimoniesProps> = ({ style }) => {
       </div>
       <div className={styles["testimonies__description-container"]}>
         <p className={styles["testimonies__description"]}>
-          Read inspiring testimonies from some of our brethren whose lives have
-          been changed by the Lord since becoming part of our church. Their
-          stories remind us of the wonders possible when we truly connect to the
-          incredible power of God, which is abundant in Shining Light Fellowship.
+          Testimonies declare God’s faithfulness and strengthen the church. They
+          invite thanksgiving (Psalm 107:1–2; 1 Thessalonians 5:18), build
+          faith (Romans 10:17), and witness to those seeking hope (John 9:25;
+          Acts 4:20). By sharing how God has healed, provided, or transformed a
+          life, we glorify Him and encourage others to trust in His power. Please
+          add your story so others may be blessed.
         </p>
         <div className={styles["testimonies__description-button"]}>
           <Button

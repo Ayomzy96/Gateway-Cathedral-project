@@ -45,8 +45,14 @@
   &__description {
     @include description;
     width: 70%;
+    max-width: 60ch; /* improves line length for readability */
+    font-size: toRem(18px);
+    line-height: 1.6;
+  color: $col-grey-1;
     @include respond(mobile-screen) {
       width: 100%;
+      font-size: toRem(16px);
+      max-width: 100%;
     }
     &-container {
       display: flex;
