@@ -36,9 +36,9 @@ const TestimoniesPage: React.FC = () => {
         </div>
         <div className={styles["testimonies__description-container"]}>
           <p className={styles["testimonies__description"]}>
-            Testimonies remind us of God's faithfulness and the power of telling
-            what He has done. As Revelation 12:11 says, "They triumphed over him
-            by the blood of the Lamb and by the word of their testimony" — your
+            Testimonies remind us of God&apos;s faithfulness and the power of telling
+            what He has done. As Revelation 12:11 says, &ldquo;They triumphed over him
+            by the blood of the Lamb and by the word of their testimony&rdquo; — your
             story can encourage others, strengthen faith, and bring hope to those
             who are struggling. Please share how God has moved in your life so we
             can celebrate and uplift one another.
