@@ -26,7 +26,7 @@ export const services = [
     location: "Otunba Runsewe Estate, Ahmadiyya, Ijaiye-Ojokoro, Lagos state, Lagos, Nigeria",
   },
   {
-    img: "https://kdijhjnkxkrfjlyavcoe.supabase.co/storage/v1/object/public/Gateway%20Cathedral/photos/sunday%20service.jpg",
+    img: "https://kdijhjnkxkrfjlyavcoe.supabase.co/storage/v1/object/public/Gateway%20Cathedral/MS170008.jpg.jpeg",
     name: "Sunday Service",
     day: "Every Sunday of the week 10:00am",
     location: "Otunba Runsewe Estate, Ahmadiyya, Ijaiye-Ojokoro, Lagos state, Lagos, Nigeria",
@@ -41,9 +41,9 @@ export const services = [
 
 export const upComingEvents = [
   {
-    img: "https://Gatewaydevbucket.s3.us-west-1.amazonaws.com/Images/bible-service.jpg",
-    name: "Worship Concert",
-    day: "Not determined yet",
+    img: "https://kdijhjnkxkrfjlyavcoe.supabase.co/storage/v1/object/public/Gateway%20Cathedral/slf%20post.jpg.jpeg",
+    name: "White Worship",
+    day: "17 May 2026 8am Prompt",
     location: "Otunba Runsewe Estate, Ahmadiyya, Ijaiye-Ojokoro, Lagos state, Lagos, Nigeria",
   },
   
