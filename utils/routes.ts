@@ -21,6 +21,17 @@ export const pageRoutes = [
       },
     ],
   },
+  {
+    name: "Meet Our Team",
+    children: [
+      { path: "meet-our-team/choir", name: "The Choir" },
+      { path: "meet-our-team/ushers", name: "Ushers" },
+      { path: "meet-our-team/media-team", name: "Media Team" },
+      { path: "meet-our-team/protocol", name: "Protocol" },
+      { path: "meet-our-team/prayer-department", name: "Prayer Department" },
+      { path: "meet-our-team/pastors", name: "Pastors" },
+    ],
+  },
   
 ];
 

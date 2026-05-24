@@ -43,7 +43,7 @@ const Page: React.FC = () => {
             <div className={styles["children__pastor-profile-image"]}>
               <Image
                 src={"https://kdijhjnkxkrfjlyavcoe.supabase.co/storage/v1/object/public/Gateway%20Cathedral/welcome%20to%20church.jpg"}
-                alt="Image of pastor with wife"
+                alt="Welcome to church"
                 fill
               />
             </div>

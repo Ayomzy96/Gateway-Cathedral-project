@@ -1,0 +1,32 @@
+.team {
+  padding: 36px 6%;
+  &__heading {
+    font-size: 36px;
+    margin-bottom: 8px;
+  }
+  &__intro {
+    color: #666;
+    margin-bottom: 24px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  &__list-item {
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  &__list-title {
+    margin: 0 0 8px 0;
+  }
+  &__list-desc {
+    margin: 0 0 12px 0;
+  }
+  &__link {
+    color: #0b5cff;
+  }
+}

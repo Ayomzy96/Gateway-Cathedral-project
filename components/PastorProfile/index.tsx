@@ -8,8 +8,8 @@ const PastorProfile: React.FC = () => {
     <div className={styles["profile__wrapper"]}>
       <div className={styles["profile__image"]}>
         <Image
-          src={"https://kdijhjnkxkrfjlyavcoe.supabase.co/storage/v1/object/public/Gateway%20Cathedral/our%20pastor.jpg"}
-          alt="Image of pastor with wife"
+          src={"https://kdijhjnkxkrfjlyavcoe.supabase.co/storage/v1/object/public/Gateway%20Cathedral/http___172.20.10.1_33455_static_21111FD1-9B84-44E8-82AE-4AD56F326814_image_283598A8-554F-43AF-93B6-99F9E23A3B0E_L0_001_283598A8-554F-43AF-93B6-99F9E23A3B0EL0001%20(2).jpg"}
+          alt="Image of our pastor"
           fill
         />
       </div>

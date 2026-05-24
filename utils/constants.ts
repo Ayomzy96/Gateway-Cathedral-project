@@ -76,7 +76,7 @@ export const testimonies = [
   {
     name: "Anonymous",
     testimony:
-      "Since joining Gateway Church, my life has been transformed. The supportive community helped me overcome personal struggles, and Pastor Adamson's sermons provided guidance and inspiration. The warmth and love here are unparalleled. I'm grateful to be part of this spiritual family that feels more like home with each passing day.",
+      "Since joining Gateway Church, my life has been transformed. The supportive community helped me overcome personal struggles, and Pastor Adamson's teachings provided guidance and inspiration. The warmth and love here are unparalleled. I'm grateful to be part of this spiritual family that feels more like home with each passing day.",
   },
 ];
 
