@@ -21,7 +21,8 @@
     position: relative;
     /* increased height slightly for better visual balance */
     height: 530px;
-    width: 530px;
+    width: 480px;
+    max-width: 100%;
     @include respond(mobile-screen) {
       width: 100%;
       height: 250px;
