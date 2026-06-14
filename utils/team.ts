@@ -32,12 +32,13 @@ export const teamCategories: TeamCategory[] = [
     id: "media-team",
     title: "Media Team",
     description:
-      "Run audio/visual systems, livestreams and record services; manage social media content and uploads.",
+      "We are dedicated to propagating the Gospel of Jesus Christ and supporting our church's mission through modern technology. We coordinate audio-visual production, live streaming, and digital communications to enhance the worship experience and connect with our global congregation.",
     members: [
       { name: "AV Lead", role: "Engineer", photo: "" },
-      { name: "Streaming Operator", role: "Producer", photo: "" },
     ],
-    gallery: [],
+    gallery: [
+      "https://kdijhjnkxkrfjlyavcoe.supabase.co/storage/v1/object/public/Gateway%20Cathedral/http___172.20.10.1_33455_static_21111FD1-9B84-44E8-82AE-4AD56F326814_image_283598A8-554F-43AF-93B6-99F9E23A3B0E_L0_001_283598A8-554F-43AF-93B6-99F9E23A3B0EL0001.jpg",
+    ],
   },
   {
     id: "protocol",
@@ -65,7 +66,7 @@ export const teamCategories: TeamCategory[] = [
     description:
       "Lead the church spiritually: preaching, counseling, pastoral visits, and oversight of ministries.",
     members: [
-      { name: "Senior Pastor", role: "Senior Pastor", photo: "" },
+      { name: "Senior Pastor", role: "Senior Pastor", photo: "https://kdijhjnkxkrfjlyavcoe.supabase.co/storage/v1/object/public/Gateway%20Cathedral/http___172.20.10.1_33455_static_21111FD1-9B84-44E8-82AE-4AD56F326814_image_283598A8-554F-43AF-93B6-99F9E23A3B0E_L0_001_283598A8-554F-43AF-93B6-99F9E23A3B0EL0001%20(4).jpg" },
       { name: "Associate Pastor", role: "Associate", photo: "" },
     ],
     gallery: [],
